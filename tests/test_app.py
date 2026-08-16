@@ -7,7 +7,7 @@ def test_home_page():
     response = client.get("/")
 
     assert response.status_code == 200
-    assert b"DevOps CI/CD Pipeline is Working!" in response.data
+    assert b"DevOps CI/CD Pipeline is Working automatically !" in response.data
 
 
 def test_health_check():
